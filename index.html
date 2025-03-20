@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>N Nursing</title>
+
+    <meta property="og:image" content="assets/images/nursing-app-logo.svg" />
+    <meta name="description" content="نيرسينج هو تطبيق مبتكر يوفر خدمات التمريض المنزلي، التحاليل الطبية، الأشعة المنزلية، وبنك الدم بسرعة وسهولة." />
+    <meta name="keywords" content="نيرسينج، خدمات التمريض، الرعاية الصحية، التحاليل الطبية، الأشعة المنزلية، بنك الدم، حجز ممرض" />
+    
+    <!-- - custom css link-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/images/123 2.svg"
+      sizes="32x32"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="apple-touch-icon" href="assets/images/123 2.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Noto+Kufi+Arabic:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="assets/js/script.js" defer></script>
+  </head>
+
+  <body id="top">
+    <!------header section--------->
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="loader"></div>
+    </div>
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo"
+          ><img src="assets/images/123 2.svg" alt="mastershop"
+        /></a>
+
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list container">
+            <li>
+              <a href="#" class="navbar-link active" data-nav-link
+                >الرئيسية</a
+              >
+            </li>
+
+            <li>
+              <a href="#about" class="navbar-link" data-nav-link>من نحن</a>
+            </li>
+
+            <li>
+              <a href="#app" class="navbar-link" data-nav-link>التطبيق</a>
+            </li>
+
+            <li>
+              <a
+                href="https://wa.me/01011010140"
+                class="btn btn-primary contact-btn2"
+                >تواصل معنا</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <ul>
+          <li>
+            <a
+            target="_blank"
+              href="https://wa.me/"
+              class="btn btn-primary contact-btn"
+              >تواصل معنا</a
+            >
+          </li>
+        </ul>
+        <button
+          class="nav-toggle-btn"
+          aria-label="toggle manu"
+          data-nav-toggler
+        >
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-------hero section---------->
+        <section class="section hero" aria-label="hero" id="home">
+          <div class="container">
+            <div class="hero-content animate__animated animate__fadeInRight">
+              <h1 class="h1 hero-title  text-md-center">
+                N Nursing: وجهتك الأمثل لخدمات التمريض والرعاية الصحية
+            </h1>
+            
+            <p class="section-text">
+                يوفر لك تطبيق N Nursing تجربة سهلة ومريحة للوصول إلى خدمات التمريض المنزلية، 
+                طلب وحدات الدم، حجز فحوصات الأشعة، وإجراء التحاليل الطبية من المعامل المعتمدة.  
+                بنقرة واحدة، يمكنك طلب الخدمة التي تحتاجها بكل سهولة وأمان، مع ضمان جودة الرعاية الصحية وسرعة الاستجابة.  
+                N Nursing هو شريكك الموثوق لتلبية جميع احتياجاتك الطبية أينما كنت.
+            </p>
+            
+
+              <ul class="btn-list">
+                <li>
+                  <a
+                    href="#"
+                    class="btn-item-link"
+                    aria-label="Download from app store"
+                  >
+                    <img
+                      src="assets/images/home/applestore-badge-AR.png"
+                      width="185"
+                      height="69"
+                      alt="app store"
+                      class="img"
+                    />
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="btn-item-link"
+                    aria-label="Download from play store"
+                  >
+                    <img
+                      src="assets/images/home/google-play-badge-AR.png"
+                      width="185"
+                      height="69"
+                      alt="play store"
+                      class="img"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <figure style="display: flex; justify-content: center;" class="hero-banner animate__animated animate__fadeInLeft">
+              <img
+                src="assets/images/15.svg"
+                width="300px"
+                alt="hero banner"
+
+              />
+            </figure>
+          </div>
+        </section>
+
+        <!-------app feature-------->
+        <section class="section features" id="features" aria-label="features">
+          <div class="container">
+            <h2 class="section-title section-header-title">مميزات التطبيق</h2>
+            <p class="text-center">
+              يتميز تطبيق N Nursing بتقديم تجربة استخدام سهلة وسريعة للوصول إلى خدمات الرعاية الصحية المتكاملة
+            </p>
+        
+            <h2 class="h2 section-title"></h2>
+        
+            <ul class="features-list">
+              <li class="features-item" data-aos="fade-down">
+                <div class="features-card">
+                  <div class="card-icon">
+                    <ion-icon name="medkit-outline" aria-hidden="true"></ion-icon>
+                  </div>
+                  <h3 class="h3 card-title">خدمات طبية متكاملة</h3>
+                  <p class="card-text">
+                    احصل على خدمات التمريض المنزلي، طلب وحدات الدم، حجز الأشعة والتحاليل بكل سهولة وأمان.
+                  </p>
+                </div>
+              </li>
+        
+              <li class="features-item" data-aos="fade-up">
+                <div class="features-card">
+                  <div class="card-icon">
+                    <ion-icon name="shield-checkmark-outline" aria-hidden="true"></ion-icon>
+                  </div>
+                  <h3 class="h3 card-title">خدمات موثوقة وآمنة</h3>
+                  <p class="card-text">
+                    نضمن لك أعلى معايير الجودة والموثوقية في تقديم الرعاية الصحية من خلال طاقم طبي مؤهل.
+                  </p>
+                </div>
+              </li>
+        
+              <li class="features-item" data-aos="fade-down">
+                <div class="features-card">
+                  <div class="card-icon">
+                    <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                  </div>
+                  <h3 class="h3 card-title">سرعة الاستجابة</h3>
+                  <p class="card-text">
+                    استمتع بخدمة سريعة لحجز واستقبال الطلبات الطبية في أي وقت وأينما كنت.
+                  </p>
+                </div>
+              </li>
+        
+              <li class="features-item" data-aos="fade-right">
+                <div class="features-card">
+                  <div class="card-icon">
+                    <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+                  </div>
+                  <h3 class="h3 card-title">دعم فني على مدار الساعة</h3>
+                  <p class="card-text">
+                    فريق دعم متخصص متوفر 24/7 للإجابة على استفساراتك ومساعدتك في أي وقت.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        
+
+        <!---------about---------->
+
+        <section class="section about" id="about" aria-label="about">
+          <div class="container">
+            <div class="row justify-content-center gap-5">
+              <div class="col-md-6">
+                <div class="about-content" data-aos="fade-left">
+                  <h2 class="section-header-title">من نحن</h2>
+            
+                  <p class="section-text">
+                    تطبيق نيرسينج هو منصة طبية مبتكرة تتيح للمستخدمين الوصول إلى خدمات الرعاية الصحية بسهولة وأمان.
+                    يوفر التطبيق مجموعة متكاملة من الخدمات الطبية مثل التمريض المنزلي، طلب وحدات الدم، الأشعة، والتحاليل الطبية،
+                    كل ذلك من خلال واجهة بسيطة وسهلة الاستخدام.
+                  </p>
+            
+                  <ul class="about-list">
+                    <li class="about-item">
+                      <div class="item-icon">
+                        <ion-icon name="medkit-outline" aria-hidden="true"></ion-icon>
+                      </div>
+            
+                      <div>
+                        <h3 class="h3 item-title">خدمات طبية متكاملة</h3>
+            
+                        <p class="item-text">
+                          نوفر لك جميع الخدمات الطبية في مكان واحد، بدءًا من التمريض المنزلي وصولًا إلى التحاليل والأشعة.
+                        </p>
+                      </div>
+                    </li>
+            
+                    <li class="about-item">
+                      <div class="item-icon">
+                        <ion-icon name="shield-checkmark-outline" aria-hidden="true"></ion-icon>
+                      </div>
+            
+                      <div>
+                        <h3 class="h3 item-title">أمان وجودة عالية</h3>
+            
+                        <p class="item-text">
+                          نضمن لك خدمات طبية ذات جودة عالية من خلال فريق محترف ومعتمد، مع الحفاظ على أقصى معايير الأمان والخصوصية.
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+           
+            <div style="display: flex; justify-content: center;" class="col-md-6 ">
+              <figure class="about-banner" data-aos="fade-right">
+                <img
+                  src="assets/images/16.svg"
+                  loading="lazy"
+                  alt="about-banner"
+                  width="300px"
+                />
+              </figure>
+            </div>
+     
+          </div>
+        </section>
+        
+
+        <!---#APP-->
+
+        <section class="section app" aria-label="app" id="app">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div style="display: flex; justify-content: center; padding: 20px 0;"  class="col-md-6">
+                <figure class="app-banner app-figure" data-aos="fade-left">
+                  <img
+                    src="assets/images/1.svg"
+                    width="300px"
+                    loading="lazy"
+                    alt="Nursing App Banner"
+                  />
+                </figure>
+              </div>
+            </div>
+          
+        
+           <div class="col-md-6">
+            <div class="app-content app-section-content" data-aos="fade-right">
+              <p class="section-subtitle section-header-title">تنزيل التطبيق</p>
+        
+              <h2 class="h2 section-title">قم بتحميل تطبيق N Nursing الآن</h2>
+        
+              <p class="section-text">
+                "احصل على أفضل خدمات الرعاية الصحية في متناول يديك مع تطبيق نيرسينج.
+                يمكنك طلب خدمات التمريض المنزلي، الفحوصات الطبية، التحاليل، وبنك الدم
+                بكل سهولة. قم بتنزيل التطبيق الآن لتتمتع بخدمة طبية آمنة وسريعة تصل
+                إليك أينما كنت!"
+              </p>
+        
+              <ul class="btn-list">
+                <li>
+                  <a
+                    href="#"
+                    class="btn-item-link"
+                    aria-label="Download from app store"
+                  >
+                    <img
+                      src="assets/images/home/applestore-badge-AR.png"
+                      width="185"
+                      height="69"
+                      alt="app store"
+                      class="img"
+                    />
+                  </a>
+                </li>
+        
+                <li>
+                  <a
+                    href="#"
+                    class="btn-item-link"
+                    aria-label="Download from play store"
+                  >
+                    <img
+                      src="assets/images/home/google-play-badge-AR.png"
+                      width="185"
+                      height="69"
+                      alt="play store"
+                      class="img"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+           </div>
+          </div>
+        </section>
+        
+      </article>
+    </main>
+
+    <!-- - #FOOTER -->
+
+    <footer class="footer">
+      <div class="section footer-top">
+        <div class="container">
+          <div class="footer-brand">
+            <a href="#" class="logo"
+              ><img src="assets/images/123 2.svg" alt="Nursing App"
+            /></a>
+    
+            <p class="section-text">
+              تطبيق N Nursing هو منصة مبتكرة توفر خدمات الرعاية الصحية المنزلية، 
+              بما في ذلك التمريض المنزلي، التحاليل الطبية، الأشعة، وبنك الدم. 
+              هدفنا هو تقديم خدمات صحية موثوقة وسريعة بكل سهولة وأمان، مع 
+              فريق متخصص لتلبية احتياجاتك الطبية في أي وقت.
+            </p>
+    
+            <ul class="social-list">
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+    
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+    
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-google"></ion-icon>
+                </a>
+              </li>
+    
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+    
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">عن التطبيق</p>
+            </li>
+            <li>
+              <a href="#" class="footer-link">الرئيسية</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">خدماتنا</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">تواصل معنا</a>
+            </li>
+            <li>
+              <a href="terms.html" class="footer-link">الشروط والأحكام</a>
+            </li>
+          </ul>
+    
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">خدماتنا</p>
+            </li>
+    
+            <li>
+              <a href="#" class="footer-link">التمريض المنزلي</a>
+            </li>
+    
+            <li>
+              <a href="#" class="footer-link">التحاليل الطبية</a>
+            </li>
+    
+            <li>
+              <a href="#" class="footer-link">الأشعة المنزلية</a>
+            </li>
+    
+            <li>
+              <a href="#" class="footer-link">بنك الدم</a>
+            </li>
+          </ul>
+    
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">تواصل معنا</p>
+            </li>
+    
+            <li class="footer-item">
+              <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+              <a href="tel:+201011010140" class="item-link">01011010140</a>
+            </li>
+    
+            <li class="footer-item">
+              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+              <a href="mailto:support@nursingapp.com" class="item-link"
+                >support@nursingapp.com</a
+              >
+            </li>
+    
+            <li class="footer-item">
+              <ion-icon name="map-outline" aria-hidden="true"></ion-icon>
+              <address class="item-link address">مصر، الجيزة</address>
+            </li>
+          </ul>
+        </div>
+      </div>
+    
+      <div class="footer-bottom">
+        <div class="container">
+          <p class="text-center">&copy; 2025 جميع الحقوق محفوظة - نيرسينج</p>
+          <p class="copyright">
+            <a href="https://new.brmja.tech/" class="copyright-link">
+              <img src="assets/images/brmja.png" alt="brmja tech logo" />
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    
+
+    <!---BACK TO TOP-------->
+
+    <a
+      href="#top"
+      class="back-top-btn"
+      aria-label="back to top"
+      data-back-top-btn
+    >
+      <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+    </a>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- 
+    - custom js link
+  -->
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
