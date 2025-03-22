@@ -362,8 +362,8 @@ body {
 
 .app,
 .hero {
-    background-color: var(--russian-violet);
-    color: var(--white)
+    /* background-color: var(--russian-violet); */
+    /* color: var(--white) */
 }
 
 .about .about-banner,
@@ -487,7 +487,7 @@ body {
 }
 
 .app .section-title {
-    color: var(--white)
+    /* color: var(--white) */
 }
 
 .blog {
@@ -960,6 +960,43 @@ section.about {
 
 @media(max-width:1600px) {
     .hero {
-        padding: 140px 0 !important
+        padding: 140px 0 0 0 !important
+    }
+}
+@media(max-width:768px) {
+    .hero-title {
+       text-align: center;
+    }
+
+    .section-text{
+        text-align: center;
+    }
+
+    .btn-list{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    .img-footer{
+        display: flex;
+        justify-content: center;
+    }
+    .footer-brand{
+        text-align: center;
+    }
+    .social-list{
+        display: flex;
+        justify-content: center;
+    }
+    .footer-list{
+        text-align: center;
+    }
+    .footer-item{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    .section-header-title{
+        text-align: center;
     }
 }
