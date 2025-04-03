@@ -494,13 +494,18 @@
               </div>
 
               <div class="cash">
-                <p>رقم فودافون كاش للتحويل : <strong style="color: #5152dd;">010800016899</strong></p>
-
+                <p>رقم فودافون كاش للتحويل: 
+                    <strong id="vodafone-number" style="color: #5152dd;">01556611816</strong>
+                    <span class="copy-icon" onclick="copyToClipboard('vodafone-number')">📋</span>
+                </p>
+            
                 <p>قيمة الاشتراك: <strong style="color: #5152dd;">100 جنيها</strong></p>
-
-                <p>رقم InstaPay  للتحويل : <strong style="color: #5152dd;">010800016899</strong></p>
-                <!-- <a href="https://ipn.eg/S/eiissoo/instapay/1DS8Cn">رابط التحويل علي  <strong style="font-size: 20px; text-decoration: underline; color: #5152dd;">InstaPay</strong></a> -->
-              </div>
+            
+                <p>رقم InstaPay للتحويل: 
+                    <strong id="instapay-number" style="color: #5152dd;">01556611816</strong>
+                    <span class="copy-icon" onclick="copyToClipboard('instapay-number')">📋</span>
+                </p>
+            </div>
 
               <div class="terms">
                 <input type="checkbox" />
@@ -644,6 +649,18 @@
     <!-- 
     - ionicon link
   -->
+
+  <script>
+    function copyToClipboard(elementId) {
+        const text = document.getElementById(elementId).innerText;
+        navigator.clipboard.writeText(text).then(() => {
+            alert("تم النسخ بنجاح!");
+        }).catch(err => {
+            console.error('فشل النسخ:', err);
+        });
+    }
+</script>
+
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"

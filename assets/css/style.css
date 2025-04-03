@@ -1105,3 +1105,13 @@ select {
     flex-direction: column;
   }
 }
+
+.copy-icon {
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 18px;
+    color: #5152dd;
+}
+.copy-icon:hover {
+    color: #3f41bb;
+}
