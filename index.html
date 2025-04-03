@@ -486,24 +486,28 @@
                 </div>
               </div>
 
-              
-
               <div class="form-group file-upload" style="border: 2px dashed #5152dd;">
                 <input type="file" />
                 <p>تحميل ايصال الدفع</p>
               </div>
 
               <div class="cash">
-                <p>رقم فودافون كاش للتحويل: 
-                    <strong id="vodafone-number" style="color: #5152dd;">01556611816</strong>
-                    <span class="copy-icon" onclick="copyToClipboard('vodafone-number')">📋</span>
+                <p>
+                    رقم فودافون كاش للتحويل:
+                    <span class="copy-container">
+                        <strong id="vodafone-number">01556611816</strong>
+                        <span class="copy-icon" onclick="copyToClipboard('vodafone-number')"><img src="assets/images/copy.png" width="50%" alt="copy_icon"></span>
+                    </span>
                 </p>
             
                 <p>قيمة الاشتراك: <strong style="color: #5152dd;">100 جنيها</strong></p>
             
-                <p>رقم InstaPay للتحويل: 
-                    <strong id="instapay-number" style="color: #5152dd;">01556611816</strong>
-                    <span class="copy-icon" onclick="copyToClipboard('instapay-number')">📋</span>
+                <p>
+                    رقم InstaPay للتحويل:
+                    <span class="copy-container">
+                        <strong id="instapay-number">01556611816</strong>
+                        <span class="copy-icon" onclick="copyToClipboard('instapay-number')"><img src="assets/images/copy.png" width="50%" alt="copy_icon"></span>
+                    </span>
                 </p>
             </div>
 
@@ -638,6 +642,13 @@
       <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
     </a>
 
+    <script>
+      function copyToClipboard(elementId) {
+          const text = document.getElementById(elementId).innerText;
+          navigator.clipboard.writeText(text)
+      }
+  </script>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
@@ -649,18 +660,6 @@
     <!-- 
     - ionicon link
   -->
-
-  <script>
-    function copyToClipboard(elementId) {
-        const text = document.getElementById(elementId).innerText;
-        navigator.clipboard.writeText(text).then(() => {
-            alert("تم النسخ بنجاح!");
-        }).catch(err => {
-            console.error('فشل النسخ:', err);
-        });
-    }
-</script>
-
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
